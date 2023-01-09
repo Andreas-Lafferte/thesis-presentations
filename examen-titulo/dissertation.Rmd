@@ -213,7 +213,7 @@ class: middle hide-logo title
 ]
 ]
 
-.medium[.red[### Exámen para optar al título de Sociólogo]]
+.medium[.red[### Examen para optar al título de Sociólogo]]
 
 
 ----
