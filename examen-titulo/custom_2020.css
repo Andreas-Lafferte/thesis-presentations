@@ -63,7 +63,7 @@ h1, h2, h3 {
 }
 .remark-slide-content {
   background-color: #FFF;
-  font-size: 31px;
+  font-size: 26px;
 
 
   padding: 1em 2em 1em 2em;
@@ -106,9 +106,9 @@ a, a > code {
 .footnote {
 
   position: absolute;
-  bottom: 3em;
+  bottom: 1em;
   padding-right: 4em;
-  font-size: 0.9em;
+  font-size: 0.5em;
 }
 .remark-code-line-highlighted {
   background-color: #268bd240;
@@ -148,7 +148,7 @@ a, a > code {
 }
 
 .roja {
-  background-color: #d22000;
+  background-color: #cc1212;
   color: #fdf6e3;
 
 }
@@ -159,7 +159,7 @@ a, a > code {
 }
 
 .roja h2 {
-  color: #183636;
+  color: #FFFFFF;
   font-size: 2em;
 }
 
@@ -268,13 +268,16 @@ table {
 table thead th { border-bottom: 1px solid #ddd; }
 th, td { padding: 5px; }
 
-.large { font-size: 130%w
+.xlarge { font-size: 115%
+}
+
+.large { font-size: 95%
 }
 
 .medium { font-size: 85%
 }
 
-.small { font-size: 70%
+.small { font-size: 75%
 }
 
 .tiny { 
@@ -283,6 +286,9 @@ th, td { padding: 5px; }
 }
 
 
+.dat h3:last-child{
+  color: #586e75;
+}
 .red { font-color: #FF0000
 }
 
@@ -302,6 +308,18 @@ th, td { padding: 5px; }
     color: #225b7c;
 }
 
+.bg-full {
+  background-size: cover;
+}
+
+.bg-90 {
+  background-size: 90%;
+  background-position-y: 30%;
+}
+
+.bg-y-75 {
+  background-position-y: 75%;
+}
 
 /*
 .remark-slide-content:not(.exclude) {
