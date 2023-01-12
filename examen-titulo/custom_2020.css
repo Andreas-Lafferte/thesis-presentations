@@ -122,7 +122,7 @@ a, a > code {
 }
 
 .inverse a:link {
-  color: blue;
+  color: #cb3365;
 }
 
 
@@ -334,22 +334,22 @@ th, td { padding: 5px; }
 
 /* unvisited link */
 a:link {
-  color: blue;
+  color: #cb3365;
 }
 
 /* visited link */
 a:visited {
-  color: blue;
+  color: #cb3365;
 }
 
 /* mouse over link */
 a:hover {
-  color: blue;
+  color: #cb3365;
 }
 
 /* selected link */
 a:active {
-  color: blue;
+  color: #cb3365;
 }
 
 
