@@ -55,7 +55,7 @@ b, .yellow {
    color: yellow;
    }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: 'Cabin', sans-serif;
   font-weight: normal;
   color: #dc322f;
@@ -77,6 +77,11 @@ h1, h2, h3 {
 .remark-slide-content h3 {
     font-size: 35px;
 }
+
+.remark-slide-content h4 {
+    font-size: 32px;
+}
+
 .remark-code, .remark-inline-code {
   font-family: 'Source Code Pro', 'Lucida Console', Monaco, monospace;
 }
@@ -145,6 +150,10 @@ a, a > code {
 
 .inverse h3{
   font-size: 65px;  
+}
+
+.inverse h4{
+  font-size: 60px;
 }
 
 .roja {
@@ -474,4 +483,8 @@ iframe {
   background-color: #002b36;
   color: #ffffff;
   text-shadow: 0 0 20px #333;
+}
+
+.final h1{
+  font-size: 2.5em
 }

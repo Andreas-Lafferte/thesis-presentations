@@ -213,7 +213,7 @@ class: middle hide-logo title
 ]
 ]
 
-.medium[.red[### Examen para optar al título de Sociólogo]]
+.medium[.red[#### Examen para optar al título de Sociólogo]]
 
 
 ----
@@ -276,7 +276,6 @@ background-position: 99% 1%
 Aumento de la **desigualdad económica** y de la concentración de la riqueza .tiny[*(Chancel et al., 2022)*]
 
 
-
 .center[
 ![:scale 40%](images/gif1.gif)
 ]
@@ -287,14 +286,13 @@ Aumento de la **desigualdad económica** y de la concentración de la riqueza .t
 ## Contexto y motivación
 
 --
-
 .medium[
 
 * Resurgimiento de la conflictividad social: **tiempos contenciosos** .tiny[*(Della Porta et al. 2017)*]
 ]
 
 .medium[
-* Re-politización de las desigualdes y **revitalización de clivajes verticales** .tiny[(Blühdorn & Deflorian, 2021; Della Porta, 2015)]
+* Re-politización de las desigualdes y **revitalización de clivajes verticales** .tiny[*(Blühdorn & Deflorian, 2021; Della Porta, 2015)*]
 ]
 
 
@@ -308,12 +306,12 @@ Aumento de la **desigualdad económica** y de la concentración de la riqueza .t
 
 --
 
-Creciente interés en el **estudio del conflicto social**.tiny[*(cf. Almeida & Cordero Ulate, 2015; Della Porta et al., 2017; Karakoc, 2013)*]
+Creciente interés en el **estudio del conflicto social** .tiny[*(cf. Almeida & Cordero Ulate, 2015; Della Porta et al., 2017; Karakoc, 2013)*]
 
 --
 
 
-**Implicancias subjetivas** del conflicto: percepciones, actitudes y valores.tiny[*(cf. Hadler, 2017; Hertel & Schöneck, 2019; Kelley & Evans, 1995)*]
+**Implicancias subjetivas** del conflicto: percepciones, actitudes y valores .tiny[*(cf. Hadler, 2017; Hertel & Schöneck, 2019; Kelley & Evans, 1995)*]
 
 
 .center[
@@ -328,12 +326,12 @@ Creciente interés en el **estudio del conflicto social**.tiny[*(cf. Almeida & C
 
 --
 
-* De acuerdo con esta línea investigativa, uno de los principales problemas asociados a dicha polarización son las **percepciones subjetivas del conflicto**.
+De acuerdo con esta línea investigativa, uno de los principales problemas asociados a dicha polarización son las **percepciones subjetivas del conflicto**.
 
 --
   
 
-* Horizontales y **verticales** .tiny[*(Delhey & Keck, 2008)*]
+Horizontales y **verticales** 
 --
 
 ### Definición 
@@ -346,14 +344,32 @@ _La percepción de conflicto social se refiere a cómo los sujetos captan/descri
 
 
 ---
-<div style="text-align: justify">
+
 ## Explicaciones desde la literatura
 
-.bold[Perspectiva subjetivista]:
+<div style="text-align: justify">
 
-.bold[Organizaciones sociopolíticas]:
+--
+</br>
 
-.bold[Contexto]: 
+* .bold[Percibir mayores desigualdades] económicas y .bold[auto-ubicarse] en las posiciones más bajas de la estructura social se asocian con mayor percepción de conflicto .tiny[*(Hadler, 2017)*]
+
+--
+</br>
+
+* Las .bold[creencias sobre la estratificación] de las sociedades mediatiza efecto de diversos factores en el conflicto percibido .tiny[*(Hertel and Schöneck, 2019; Kelley & Evans, 1995)*]
+
+--
+</br>
+
+* La .bold[participación en organizaciones sociopolíticas] tiene un efecto potenciador en el conflicto percibido y en la participación de acciones contenciosas .tiny[*(Hadler, 2003; Kerrissey & Schofer, 2018; Ringqvist, 2020)*]
+
+--
+</br>
+
+* La .bold[desigualdad económica] incrementa la percepción de conflicto, mientras que en países con .bold[Estados de Bienestar más extensos] se perciben menos tensiones .tiny[*(cf. Edlund & Lindh, 2015; Hadler, 2017)*]
+
+
 
 ---
 
@@ -361,14 +377,14 @@ _La percepción de conflicto social se refiere a cómo los sujetos captan/descri
 
 .pull-left-wide[
 .content-box-red[
-1. .bold[Ausencia del análisis de clase] en investigaciones más recientes. Ampliar relación empiríca entre la percepción *general* de conflictos y otros esquemas de clase]
+1..bold[Ausencia del análisis de clase] en investigaciones más recientes. Ampliar relación empiríca entre la percepción *general* de conflictos y otros esquemas de clase]
 ]
 
 --
 
 .pull-right-wide[
 .content-box-red[
-2. La pregunta sobre cómo el nivel de .bold[desigualdad económica] de los países puede .bold[moderar] el efecto de la .bold[clase social] en el conflicto percibido es aún incierta
+2.La pregunta sobre cómo el nivel de .bold[desigualdad económica] de los países puede .bold[moderar] el efecto de la .bold[clase social] en el conflicto percibido es aún incierta
 ]
 ]
 
@@ -399,11 +415,44 @@ class: roja, middle center
 
 
 ---
-<div style="text-align: justify">
 ## Antecedentes e hipótesis
 
 
+$H_{1}$: Individuos de clases subordinadas tenderán a percibir mayor conflicto social que individuos de clases privilegiadas .tiny[*(Edlund & Lindh, 2015; Pérez, 2022; Wright, 1997)*]
+
+
+$H_{2}$:Individuos miembros de sindicatos tenderán a percibir mayor conflicto social que individuos que no lo son .tiny[*(Ringqvist, 2020; Kerrissey & Schofer, 2018)*]
+
+
+.center[
+![:scale 60%](images/h1.jpg)
+]
  
+---
+## Antecedentes e hipótesis
+
+
+$H_{3a}$: Mayores niveles de desigualdad económica aumentarán las percepciones de conflicto social en los individuos .tiny[*(Hadler, 2017; Hertel & Schöneck, 2019; Karakoc, 2013)*]
+
+
+$H_{4}$: Mayores niveles de corporativismo disminuirán las percepciones de conflicto social en los individuos. .tiny[*(Ringqvist, 2020; Pérez, 2022)*]
+
+.center[
+![:scale 60%](images/h2.jpg)
+]
+
+---
+## Antecedentes e hipótesis
+
+
+$H_{3b}$: A mayores niveles de desigualdad económica, los individuos de clase trabajadora aumentarán su percepción de conflicto social, mientras que individuos de clase capitalista mantendrán o disminuirán su percepción de conflicto social .tiny[*(Andersen & Curtis, 2015; Della Porta, 2015; Haddon & Wu, 2021)*]
+
+
+.center[
+![:scale 70%](images/h3.jpg)
+]
+
+
 ---
 class: inverse middle center, slideInRight
 background-size: 12%
@@ -563,7 +612,7 @@ background-position: 99% 1%
 
 
 ---
-### Modelos - Interceptos aleatorios
+## Modelos - Interceptos aleatorios
 
 .center[
 ![:scale 75%](images/results1.jpg)
@@ -572,7 +621,7 @@ background-position: 99% 1%
 
 
 ---
-### Modelos - Interceptos aleatorios
+## Modelos - Interceptos aleatorios
 
 .center[
 ![:scale 75%](images/results2.jpg)
@@ -588,7 +637,7 @@ H1: ✓
 .footnote[Modelo 1 (FE-nivel individual). ∗∗∗ p < 0.01; ∗∗ p < 0.05; ∗ p < 0.1 ]
 
 ---
-### Modelos - Interceptos aleatorios
+## Modelos - Interceptos aleatorios
 
 .center[
 ![:scale 75%](images/results3.jpg)
@@ -608,7 +657,7 @@ H2: ✓
 
 
 ---
-### Modelos - Interceptos aleatorios
+## Modelos - Interceptos aleatorios
 
 .center[
 ![:scale 75%](images/results4.jpg)
@@ -627,7 +676,7 @@ H3a: ✓
 .footnote[Modelo 2 (FE-nivel individual y contextual). ∗∗∗ p < 0.01; ∗∗ p < 0.05; ∗ p < 0.1 ]
 
 ---
-### Modelos - Interceptos aleatorios
+## Modelos - Interceptos aleatorios
 
 .center[
 ![:scale 75%](images/results5.jpg)
@@ -647,7 +696,7 @@ H4: ✓
 .footnote[Modelo 2 (FE-nivel individual y contextual). ∗∗∗ p < 0.01; ∗∗ p < 0.05; ∗ p < 0.1 ]
 
 ---
-### Modelos - Interacciones entre niveles
+## Modelos - Interacciones entre niveles
 
 .center[
 ![:scale 75%](images/results6.jpg)
@@ -668,7 +717,7 @@ H4: ✓
 .footnote[Modelo 4 (FE-RE, incluye controles). ∗∗∗ p < 0.01; ∗∗ p < 0.05; ∗ p < 0.1 ]
 
 ---
-### Modelos - Interacciones entre niveles
+## Modelos - Interacciones entre niveles
 
 .center[
 ![:scale 80%](images/cross-level-interactions.png)
@@ -684,7 +733,92 @@ background-position: 99% 1%
 ## 4. Discusión y conclusiones
 
 ---
-Hola
+## Discusión
+
+<div style="text-align: justify">
+</br>
+.left-column[
+### Posición de clase
+]
+.right-column[
+Hola.
+]
+
+---
+## Discusión
+<div style="text-align: justify">
+</br>
+.left-column[
+### Posición de clase
+</br>
+### Membresía sindical
+]
+</br>
+.right-column[
+Chao.
+]
+---
+## Discusión
+<div style="text-align: justify">
+</br>
+.left-column[
+### Posición de clase
+</br>
+### Membresía sindical
+</br>
+### Desigualdad económica
+]
+</br></br>
+.right-column[
+Ja
+
+]
+
+---
+## Discusión
+
+<div style="text-align: justify">
+</br>
+.left-column[
+### Corporativismo
+]
+.right-column[
+Hola.
+]
+
+---
+## Discusión
+
+<div style="text-align: justify">
+</br>
+.left-column[
+### Corporativismo
+</br>
+### Clase y desigualdad
+]
+.right-column[
+Hola.
+]
+
+---
+class: roja
+ 
+## Conclusiones
+
+<div style="text-align: justify">
+
+--
+1. X
+
+--
+
+2. Y
+
+--
+
+3. K
+
+
 ---
 class: inverse middle center, slideInRight
 background-size: 12%
@@ -693,25 +827,25 @@ background-position: 99% 1%
 ## 5. Respuesta a comentarios
 
 ---
-
-Hola
-
-
----
-class: inverse middle center, slideInRight
+class: center middle hide-logo
 background-size: 12%
 background-position: 99% 1%
 
-# ¡Muchas Gracias!
-.center[
+.final[
+# ¡Gracias por su atención!
+]
 
-</br>
-Andreas Lafferte Tamayo<br>
+<br>
 
-[Tesis abierta](https://github.com/Andreas-Lafferte/tesis)
+----
+.espaciosimplelineas[
+ Andreas Lafferte Tamayo - andreas.laffert@ug.uchile.cl<br>
+ 
+ [Tesis abierta](https://github.com/Andreas-Lafferte/tesis)
 
 .light[Facultad de Ciencias Sociales, Universidad de Chile<br>
 Enero, 2023]
+
 ]
 
 ---
@@ -838,25 +972,5 @@ fit_tab
 
 ]
 
----
-### Supuestos: DFBetas
-
-
-```{r dfbetas, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE, results='asis', fig.align='center'}
-library(influence.ME)
-
-# Model 3: Class + Union + Ratio + CorpAll + WAVE
-model_3 <- lmer(PSCi ~ 1 + CLASS + UNION + C_RATIO + CorpAll + WAVE +
-                  (1 | COUNTRY), data = db, weights = FACTOR, REML = T)
-
-inf_m3 <- influence(model_3, group = "COUNTRY")
-
-cutdfbeta <- 2/sqrt(33)
-
-plot(inf_m3, which = "dfbetas", cutoff = cutdfbeta, 
-     sort = TRUE, to.sort = 14, parameters = 13:14,
-     xlab = "DFBETAS", ylab = "País", width=60, height=40) 
-
-```
 
 
