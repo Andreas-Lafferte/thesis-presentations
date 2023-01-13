@@ -741,7 +741,7 @@ background-position: 99% 1%
 ### Posición de clase
 ]
 .right-column[
-Hola.
+
 ]
 
 ---
@@ -755,7 +755,7 @@ Hola.
 ]
 </br>
 .right-column[
-Chao.
+
 ]
 ---
 ## Discusión
@@ -770,7 +770,7 @@ Chao.
 ]
 </br></br>
 .right-column[
-Ja
+
 
 ]
 
@@ -780,24 +780,24 @@ Ja
 <div style="text-align: justify">
 </br>
 .left-column[
-### Corporativismo
-]
-.right-column[
-Hola.
-]
-
----
-## Discusión
-
-<div style="text-align: justify">
-</br>
-.left-column[
-### Corporativismo
-</br>
 ### Clase y desigualdad
 ]
 .right-column[
-Hola.
+
+]
+
+---
+## Discusión
+
+<div style="text-align: justify">
+</br>
+.left-column[
+### Clase y desigualdad
+</br>
+### Corporativismo
+]
+.right-column[
+
 ]
 
 ---
