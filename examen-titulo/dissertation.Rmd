@@ -16,12 +16,17 @@ output:
       countIncrementalSlides: false
       ratio: '16:9'
       beforeInit: "xaringan_custom/macros.js"
-      slideNumberFormat: "%current%/%total%"
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>
       navigation:
         scroll: false #
 biblio-style: apalike
 lang: es-CL
 ---
+
 
 ```{r database, message=TRUE, warning=TRUE, include=FALSE, paged.print=TRUE}
 
@@ -33,7 +38,8 @@ pacman::p_load(tidyverse, sjmisc, kableExtra, sjPlot,
                influence.ME, janitor, lessR, ggrepel, ggpubr,
                performance, ggrepel, ggthemes, flexplot,
                sjlabelled, RColorBrewer, stats, car, texreg,
-               scales, GGally, broom, table1, cowplot, ggeffects,knitr)
+               scales, GGally, broom, table1, cowplot, ggeffects,
+               knitr, icons)
 
 options(scipen=999)
 
@@ -116,9 +122,6 @@ my_pretty_theme <- theme_minimal(base_family = "Roboto Condensed", base_size = 1
 
 ```
 
-```{r xaringanExtra, echo=FALSE}
-xaringanExtra::use_xaringan_extra(c("tile_view", "share_again", "scribble"))
-```
 
 
 ```{r, message=FALSE, warning=FALSE, include=FALSE, results='asis'}
@@ -185,9 +188,18 @@ model_6.e <- readRDS("~/GitHub/tesis/output/model_6e.rds")
 
 ```
 
+```{r xaringanExtra1, include=FALSE}
+xaringanExtra::use_xaringan_extra(c("tile_view", "share_again", "scribble"))
+```
+
+
 
 
 class: middle hide-logo title
+
+```{r xaringanExtra2, echo = FALSE}
+xaringanExtra::use_progress_bar(color = "red", location = c("top"))
+```
 
 .pull-left-narrow[
 .espaciosimple[
@@ -229,7 +241,7 @@ class: middle hide-logo title
 Facultad de Ciencias Sociales, Universidad de Chile
 ]
 .small[
-Enero, Santiago.
+Enero 2023, Santiago.
 
   ]
 
@@ -238,7 +250,8 @@ Enero, Santiago.
 
 </br>
 .left.tiny[Profesor Guía: Dr. Juan Carlos Castillo </br>
-Comisión:  ]
+Comisión: Dr. Pablo Pérez Ahumada y ]
+
 ---
 class: inverse middle center, slideInRight
 
@@ -248,7 +261,7 @@ class: inverse middle center, slideInRight
 
 
 .medium[ 
-1. Introducción
+1. Problema de investigación
 2. Datos, variables y métodos
 3. Resultados
 4. Discusión y conclusiones
@@ -257,165 +270,45 @@ class: inverse middle center, slideInRight
 
 
 ---
-
-layout: true
-class: animated, fadeIn
----
 class: inverse middle center, slideInRight
 background-size: 12%
 background-position: 99% 1%
 
-## 1. Introducción
+## 1. Problema de investigación
+
 
 ---
 
+.box-4.large.sp-after-half[Show people who you are]
+
+.box-inv-4.medium.sp-after[Your own website]
+---
 ## Contexto y motivación
 
---
-
-Aumento de la **desigualdad económica** y de la concentración de la riqueza .tiny[*(Chancel et al., 2022)*]
-
+Resurgimiento de la conflictividad social alrededor del mundo: .bold[tiempos contenciosos] .tiny[*(Della Porta et al. 2017)*]
 
 .center[
-![:scale 40%](images/gif1.gif)
+![:scale 65%](images/protest-chile.png)
 ]
-
-
----
-
-## Contexto y motivación
-
---
-.medium[
-
-* Resurgimiento de la conflictividad social: **tiempos contenciosos** .tiny[*(Della Porta et al. 2017)*]
-]
-
-.medium[
-* Re-politización de las desigualdes y **revitalización de clivajes verticales** .tiny[*(Blühdorn & Deflorian, 2021; Della Porta, 2015)*]
-]
-
-
-.center[
-![:scale 38%](images/gif2.gif)
-]
-
----
-
-## Contexto y motivación
-
---
-
-Creciente interés en el **estudio del conflicto social** .tiny[*(cf. Almeida & Cordero Ulate, 2015; Della Porta et al., 2017; Karakoc, 2013)*]
-
---
-
-
-**Implicancias subjetivas** del conflicto: percepciones, actitudes y valores .tiny[*(cf. Hadler, 2017; Hertel & Schöneck, 2019; Kelley & Evans, 1995)*]
-
-
-.center[
-![:scale 44%](images/Percep.jpg)
-]
-
-
-
----
-
-## Problema de investigación
-
---
-
-De acuerdo con esta línea investigativa, uno de los principales problemas asociados a dicha polarización son las **percepciones subjetivas del conflicto**.
-
---
-  
-
-Horizontales y **verticales** 
---
-
-### Definición 
-
-.content-box-red[
-
-_La percepción de conflicto social se refiere a cómo los sujetos captan/describen un conflicto social determinado entre dos grupos verticalmente organizados .tiny[(Hertel & Schöneck, 2019, p.2)]_
-
-]
-
-
----
-
-## Explicaciones desde la literatura
-
-<div style="text-align: justify">
-
---
-</br>
-
-* .bold[Percibir mayores desigualdades] económicas y .bold[auto-ubicarse] en las posiciones más bajas de la estructura social se asocian con mayor percepción de conflicto .tiny[*(Hadler, 2017)*]
-
---
-</br>
-
-* Las .bold[creencias sobre la estratificación] de las sociedades mediatiza efecto de diversos factores en el conflicto percibido .tiny[*(Hertel and Schöneck, 2019; Kelley & Evans, 1995)*]
-
---
-</br>
-
-* La .bold[participación en organizaciones sociopolíticas] tiene un efecto potenciador en el conflicto percibido y en la participación de acciones contenciosas .tiny[*(Hadler, 2003; Kerrissey & Schofer, 2018; Ringqvist, 2020)*]
-
---
-</br>
-
-* La .bold[desigualdad económica] incrementa la percepción de conflicto, mientras que en países con .bold[Estados de Bienestar más extensos] se perciben menos tensiones .tiny[*(cf. Edlund & Lindh, 2015; Hadler, 2017)*]
-
-
-
----
-
-## Problematización
-
-.pull-left-wide[
-.content-box-red[
-1..bold[Ausencia del análisis de clase] en investigaciones más recientes. Ampliar relación empiríca entre la percepción *general* de conflictos y otros esquemas de clase]
-]
-
---
-
-.pull-right-wide[
-.content-box-red[
-2.La pregunta sobre cómo el nivel de .bold[desigualdad económica] de los países puede .bold[moderar] el efecto de la .bold[clase social] en el conflicto percibido es aún incierta
-]
-]
-
---
-
-</br></br>
-
-.pull-left-wide[
-
-.xlarge[.bold[Este estudio...]]
-]
-
 
 ---
 class: roja, middle center
  
-## Pregunta de investigación 
+
 
 <div style="text-align: justify">
 
 
-.xlarge[
+.slarge[
 
 
-.bold[*¿En qué medida la .black[clase social] afecta a las .black[percepciones de conflicto social] y cómo esta relación cambia a partir del rol del .black[contexto económico e institucional] entre 1999-2019?*]
+.bold[*¿En qué medida la .yellow[clase social] afecta a las .yellow[percepciones de conflicto social] y cómo esta relación cambia a partir del rol del .yellow[contexto económico e institucional] entre 1999-2019?*]
 ]
 
 
 
 ---
-## Antecedentes e hipótesis
+## Antecedentes e hipótesis: nivel individual
 
 
 $H_{1}$: Individuos de clases subordinadas tenderán a percibir mayor conflicto social que individuos de clases privilegiadas .tiny[*(Edlund & Lindh, 2015; Pérez, 2022; Wright, 1997)*]
@@ -429,7 +322,7 @@ $H_{2}$:Individuos miembros de sindicatos tenderán a percibir mayor conflicto s
 ]
  
 ---
-## Antecedentes e hipótesis
+## Antecedentes e hipótesis: nivel contextual
 
 
 $H_{3a}$: Mayores niveles de desigualdad económica aumentarán las percepciones de conflicto social en los individuos .tiny[*(Hadler, 2017; Hertel & Schöneck, 2019; Karakoc, 2013)*]
@@ -442,7 +335,7 @@ $H_{4}$: Mayores niveles de corporativismo disminuirán las percepciones de conf
 ]
 
 ---
-## Antecedentes e hipótesis
+## Antecedentes e hipótesis: interacción
 
 
 $H_{3b}$: A mayores niveles de desigualdad económica, los individuos de clase trabajadora aumentarán su percepción de conflicto social, mientras que individuos de clase capitalista mantendrán o disminuirán su percepción de conflicto social .tiny[*(Andersen & Curtis, 2015; Della Porta, 2015; Haddon & Wu, 2021)*]
@@ -463,7 +356,7 @@ background-position: 99% 1%
 ---
 
 
-## Datos y método
+## Datos
 
 <div style="text-align: justify">
 
@@ -472,10 +365,6 @@ background-position: 99% 1%
 
 .large[
 
-.dat[
-### Datos
-]
-
 Módulo de Desigualdad Social de la [International Social Survey Programme (ISSP)](https://www.gesis.org/en/issp/modules/issp-modules-by-topic/social-inequality) en sus olas de 1999 (*N* = 6.175), 2009 (*N* = 21.932) y 2019 (*N* = 11.746) además de otras fuentes de datos como  [OCDE](https://data.oecd.org/economy.htm#profile-GDP%20and%20spending), [WIID](https://www.wider.unu.edu/database/world-income-inequality-database-wiid#WIIDcomp) e [ICTWSS](https://www.ictwss.org/). Muestra final compuesta por 39.853 individuos (nivel 1) anidados en 33 países (nivel 2).
 ]
 --
@@ -483,9 +372,9 @@ Módulo de Desigualdad Social de la [International Social Survey Programme (ISSP
 
 .large[
 
-.dat[
-### Método
-]
+
+## Método
+
 
 Modelos de regresión multinivel en series de tiempo o tendencia para 33 países entre 1999/2009/2019.
 
@@ -827,26 +716,80 @@ background-position: 99% 1%
 ## 5. Respuesta a comentarios
 
 ---
-class: center middle hide-logo
-background-size: 12%
-background-position: 99% 1%
+class: roja
+ 
+## Conclusiones post-comentarios
 
-.final[
-# ¡Gracias por su atención!
+<div style="text-align: justify">
+
+--
+1. X
+
+--
+
+2. Y
+
+--
+
+3. K
+
+
+---
+class: middle hide-logo title
+
+.pull-left-narrow[
+.espaciosimple[
+.tiny[]
 ]
 
-<br>
+![:scale 80%](images/escudo-uchile-vertical-color.jpg)
+<br><br><br><br><br>
+]
+
+.pull-right-wide[
+.right[
+
+.content-box-red[
+.center[
+
+## Ellos contra nosotros: las percepciones del conflicto social
+
+.medium[
+
+### Un análisis comparado de sus determinantes
+]
+]
+]
+
+.medium[.red[#### Examen para optar al título de Sociólogo]]
+
 
 ----
 .espaciosimplelineas[
- Andreas Lafferte Tamayo - andreas.laffert@ug.uchile.cl<br>
- 
- [Tesis abierta](https://github.com/Andreas-Lafferte/tesis)
 
-.light[Facultad de Ciencias Sociales, Universidad de Chile<br>
-Enero, 2023]
+.medium[.bold[Andreas Lafferte Tamayo]] <br>
+
+[`r icons::icon_style(simple_icons("github"), scale = 1.5, fill = "black")`](https://github.com/Andreas-Lafferte) [`r icons::icon_style(fontawesome("envelope"), scale = 1.5, fill = "black")`](andreas.laffert@ug.uchile.cl)
 
 ]
+
+
+
+.small[
+Facultad de Ciencias Sociales, Universidad de Chile
+]
+.small[
+Enero 2023, Santiago.
+
+  ]
+
+]
+]
+
+</br>
+.left.tiny[Profesor Guía: Dr. Juan Carlos Castillo </br>
+Comisión: Dr. Pablo Pérez Ahumada y ]
+
 
 ---
 ### Referencias
@@ -859,6 +802,10 @@ background-position: 99% 1%
 ## 6. Anexos
 
 ---
+### Planteamiento
+
+---
+
 ### Descriptivos
 
 .center[

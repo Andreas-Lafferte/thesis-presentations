@@ -16,6 +16,7 @@
     <link href="libs/xaringanExtra-scribble/scribble.css" rel="stylesheet" />
     <script src="libs/xaringanExtra-scribble/scribble.js"></script>
     <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#FF0000"],"pen_size":3,"eraser_size":30,"palette":[]}) })</script>
+    <script src="libs/xaringanExtra-progressBar/progress-bar.js"></script>
     <script src="libs/kePrint/kePrint.js"></script>
     <link href="libs/lightable/lightable.css" rel="stylesheet" />
     <link href="libs/bsTable/bootstrapTable.min.css" rel="stylesheet" />
@@ -39,7 +40,31 @@
 
 
 
+
+
+
 class: middle hide-logo title
+
+<style>.xe__progress-bar__container {
+  top:0;
+  opacity: 1;
+  position:absolute;
+  right:0;
+  left: 0;
+}
+.xe__progress-bar {
+  height: 0.25em;
+  background-color: red;
+  width: calc(var(--slide-current) / var(--slide-total) * 100%);
+}
+.remark-visible .xe__progress-bar {
+  animation: xe__progress-bar__wipe 200ms forwards;
+  animation-timing-function: cubic-bezier(.86,0,.07,1);
+}
+@keyframes xe__progress-bar__wipe {
+  0% { width: calc(var(--slide-previous) / var(--slide-total) * 100%); }
+  100% { width: calc(var(--slide-current) / var(--slide-total) * 100%); }
+}</style>
 
 .pull-left-narrow[
 .espaciosimple[
@@ -81,7 +106,7 @@ class: middle hide-logo title
 Facultad de Ciencias Sociales, Universidad de Chile
 ]
 .small[
-Enero, Santiago.
+Enero 2023, Santiago.
 
   ]
 
@@ -90,7 +115,8 @@ Enero, Santiago.
 
 &lt;/br&gt;
 .left.tiny[Profesor Guía: Dr. Juan Carlos Castillo &lt;/br&gt;
-Comisión:  ]
+Comisión: Dr. Pablo Pérez Ahumada y ]
+
 ---
 class: inverse middle center, slideInRight
 
@@ -100,7 +126,7 @@ class: inverse middle center, slideInRight
 
 
 .medium[ 
-1. Introducción
+1. Problema de investigación
 2. Datos, variables y métodos
 3. Resultados
 4. Discusión y conclusiones
@@ -109,165 +135,45 @@ class: inverse middle center, slideInRight
 
 
 ---
-
-layout: true
-class: animated, fadeIn
----
 class: inverse middle center, slideInRight
 background-size: 12%
 background-position: 99% 1%
 
-## 1. Introducción
+## 1. Problema de investigación
+
 
 ---
 
+.box-4.large.sp-after-half[Show people who you are]
+
+.box-inv-4.medium.sp-after[Your own website]
+---
 ## Contexto y motivación
 
---
-
-Aumento de la **desigualdad económica** y de la concentración de la riqueza .tiny[*(Chancel et al., 2022)*]
-
+Resurgimiento de la conflictividad social alrededor del mundo: .bold[tiempos contenciosos] .tiny[*(Della Porta et al. 2017)*]
 
 .center[
-![:scale 40%](images/gif1.gif)
+![:scale 65%](images/protest-chile.png)
 ]
-
-
----
-
-## Contexto y motivación
-
---
-.medium[
-
-* Resurgimiento de la conflictividad social: **tiempos contenciosos** .tiny[*(Della Porta et al. 2017)*]
-]
-
-.medium[
-* Re-politización de las desigualdes y **revitalización de clivajes verticales** .tiny[*(Blühdorn &amp; Deflorian, 2021; Della Porta, 2015)*]
-]
-
-
-.center[
-![:scale 38%](images/gif2.gif)
-]
-
----
-
-## Contexto y motivación
-
---
-
-Creciente interés en el **estudio del conflicto social** .tiny[*(cf. Almeida &amp; Cordero Ulate, 2015; Della Porta et al., 2017; Karakoc, 2013)*]
-
---
-
-
-**Implicancias subjetivas** del conflicto: percepciones, actitudes y valores .tiny[*(cf. Hadler, 2017; Hertel &amp; Schöneck, 2019; Kelley &amp; Evans, 1995)*]
-
-
-.center[
-![:scale 44%](images/Percep.jpg)
-]
-
-
-
----
-
-## Problema de investigación
-
---
-
-De acuerdo con esta línea investigativa, uno de los principales problemas asociados a dicha polarización son las **percepciones subjetivas del conflicto**.
-
---
-  
-
-Horizontales y **verticales** 
---
-
-### Definición 
-
-.content-box-red[
-
-_La percepción de conflicto social se refiere a cómo los sujetos captan/describen un conflicto social determinado entre dos grupos verticalmente organizados .tiny[(Hertel &amp; Schöneck, 2019, p.2)]_
-
-]
-
-
----
-
-## Explicaciones desde la literatura
-
-&lt;div style="text-align: justify"&gt;
-
---
-&lt;/br&gt;
-
-* .bold[Percibir mayores desigualdades] económicas y .bold[auto-ubicarse] en las posiciones más bajas de la estructura social se asocian con mayor percepción de conflicto .tiny[*(Hadler, 2017)*]
-
---
-&lt;/br&gt;
-
-* Las .bold[creencias sobre la estratificación] de las sociedades mediatiza efecto de diversos factores en el conflicto percibido .tiny[*(Hertel and Schöneck, 2019; Kelley &amp; Evans, 1995)*]
-
---
-&lt;/br&gt;
-
-* La .bold[participación en organizaciones sociopolíticas] tiene un efecto potenciador en el conflicto percibido y en la participación de acciones contenciosas .tiny[*(Hadler, 2003; Kerrissey &amp; Schofer, 2018; Ringqvist, 2020)*]
-
---
-&lt;/br&gt;
-
-* La .bold[desigualdad económica] incrementa la percepción de conflicto, mientras que en países con .bold[Estados de Bienestar más extensos] se perciben menos tensiones .tiny[*(cf. Edlund &amp; Lindh, 2015; Hadler, 2017)*]
-
-
-
----
-
-## Problematización
-
-.pull-left-wide[
-.content-box-red[
-1..bold[Ausencia del análisis de clase] en investigaciones más recientes. Ampliar relación empiríca entre la percepción *general* de conflictos y otros esquemas de clase]
-]
-
---
-
-.pull-right-wide[
-.content-box-red[
-2.La pregunta sobre cómo el nivel de .bold[desigualdad económica] de los países puede .bold[moderar] el efecto de la .bold[clase social] en el conflicto percibido es aún incierta
-]
-]
-
---
-
-&lt;/br&gt;&lt;/br&gt;
-
-.pull-left-wide[
-
-.xlarge[.bold[Este estudio...]]
-]
-
 
 ---
 class: roja, middle center
  
-## Pregunta de investigación 
+
 
 &lt;div style="text-align: justify"&gt;
 
 
-.xlarge[
+.slarge[
 
 
-.bold[*¿En qué medida la .black[clase social] afecta a las .black[percepciones de conflicto social] y cómo esta relación cambia a partir del rol del .black[contexto económico e institucional] entre 1999-2019?*]
+.bold[*¿En qué medida la .yellow[clase social] afecta a las .yellow[percepciones de conflicto social] y cómo esta relación cambia a partir del rol del .yellow[contexto económico e institucional] entre 1999-2019?*]
 ]
 
 
 
 ---
-## Antecedentes e hipótesis
+## Antecedentes e hipótesis: nivel individual
 
 
 `\(H_{1}\)`: Individuos de clases subordinadas tenderán a percibir mayor conflicto social que individuos de clases privilegiadas .tiny[*(Edlund &amp; Lindh, 2015; Pérez, 2022; Wright, 1997)*]
@@ -281,7 +187,7 @@ class: roja, middle center
 ]
  
 ---
-## Antecedentes e hipótesis
+## Antecedentes e hipótesis: nivel contextual
 
 
 `\(H_{3a}\)`: Mayores niveles de desigualdad económica aumentarán las percepciones de conflicto social en los individuos .tiny[*(Hadler, 2017; Hertel &amp; Schöneck, 2019; Karakoc, 2013)*]
@@ -294,7 +200,7 @@ class: roja, middle center
 ]
 
 ---
-## Antecedentes e hipótesis
+## Antecedentes e hipótesis: interacción
 
 
 `\(H_{3b}\)`: A mayores niveles de desigualdad económica, los individuos de clase trabajadora aumentarán su percepción de conflicto social, mientras que individuos de clase capitalista mantendrán o disminuirán su percepción de conflicto social .tiny[*(Andersen &amp; Curtis, 2015; Della Porta, 2015; Haddon &amp; Wu, 2021)*]
@@ -315,7 +221,7 @@ background-position: 99% 1%
 ---
 
 
-## Datos y método
+## Datos
 
 &lt;div style="text-align: justify"&gt;
 
@@ -324,10 +230,6 @@ background-position: 99% 1%
 
 .large[
 
-.dat[
-### Datos
-]
-
 Módulo de Desigualdad Social de la [International Social Survey Programme (ISSP)](https://www.gesis.org/en/issp/modules/issp-modules-by-topic/social-inequality) en sus olas de 1999 (*N* = 6.175), 2009 (*N* = 21.932) y 2019 (*N* = 11.746) además de otras fuentes de datos como  [OCDE](https://data.oecd.org/economy.htm#profile-GDP%20and%20spending), [WIID](https://www.wider.unu.edu/database/world-income-inequality-database-wiid#WIIDcomp) e [ICTWSS](https://www.ictwss.org/). Muestra final compuesta por 39.853 individuos (nivel 1) anidados en 33 países (nivel 2).
 ]
 --
@@ -335,9 +237,9 @@ Módulo de Desigualdad Social de la [International Social Survey Programme (ISSP
 
 .large[
 
-.dat[
-### Método
-]
+
+## Método
+
 
 Modelos de regresión multinivel en series de tiempo o tendencia para 33 países entre 1999/2009/2019.
 
@@ -679,26 +581,80 @@ background-position: 99% 1%
 ## 5. Respuesta a comentarios
 
 ---
-class: center middle hide-logo
-background-size: 12%
-background-position: 99% 1%
+class: roja
+ 
+## Conclusiones post-comentarios
 
-.final[
-# ¡Gracias por su atención!
+&lt;div style="text-align: justify"&gt;
+
+--
+1. X
+
+--
+
+2. Y
+
+--
+
+3. K
+
+
+---
+class: middle hide-logo title
+
+.pull-left-narrow[
+.espaciosimple[
+.tiny[]
 ]
 
-&lt;br&gt;
+![:scale 80%](images/escudo-uchile-vertical-color.jpg)
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+]
+
+.pull-right-wide[
+.right[
+
+.content-box-red[
+.center[
+
+## Ellos contra nosotros: las percepciones del conflicto social
+
+.medium[
+
+### Un análisis comparado de sus determinantes
+]
+]
+]
+
+.medium[.red[#### Examen para optar al título de Sociólogo]]
+
 
 ----
 .espaciosimplelineas[
- Andreas Lafferte Tamayo - andreas.laffert@ug.uchile.cl&lt;br&gt;
- 
- [Tesis abierta](https://github.com/Andreas-Lafferte/tesis)
 
-.light[Facultad de Ciencias Sociales, Universidad de Chile&lt;br&gt;
-Enero, 2023]
+.medium[.bold[Andreas Lafferte Tamayo]] &lt;br&gt;
+
+[&lt;svg role="img" viewBox="0 0 24 24" style="position:relative;display:inline-block;top:.1em;fill:black;height:1.5em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;title&gt;&lt;/title&gt;  &lt;path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"&gt;&lt;/path&gt;&lt;/svg&gt;](https://github.com/Andreas-Lafferte) [&lt;svg viewBox="0 0 512 512" style="position:relative;display:inline-block;top:.1em;fill:black;height:1.5em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"&gt;&lt;/path&gt;&lt;/svg&gt;](andreas.laffert@ug.uchile.cl)
 
 ]
+
+
+
+.small[
+Facultad de Ciencias Sociales, Universidad de Chile
+]
+.small[
+Enero 2023, Santiago.
+
+  ]
+
+]
+]
+
+&lt;/br&gt;
+.left.tiny[Profesor Guía: Dr. Juan Carlos Castillo &lt;/br&gt;
+Comisión: Dr. Pablo Pérez Ahumada y ]
+
 
 ---
 ### Referencias
@@ -711,6 +667,10 @@ background-position: 99% 1%
 ## 6. Anexos
 
 ---
+### Planteamiento
+
+---
+
 ### Descriptivos
 
 .center[
@@ -875,7 +835,7 @@ background-position: 99% 1%
 "highlightLines": true,
 "countIncrementalSlides": false,
 "ratio": "16:9",
-"slideNumberFormat": "%current%/%total%",
+"slideNumberFormat": "<div class=\"progress-bar-container\">\n  <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">\n  </div>\n</div>\n",
 "navigation": {
 "scroll": false
 }
