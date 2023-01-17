@@ -281,7 +281,7 @@ background-position: 99% 1%
 
 --
 
-En las últimas décadas, Chile ha experimentado una .bold[revitalización de la movilización social] .tiny[*(Donoso & von Bulow, 2017; Somma et al., 2021)*]
+En las últimas décadas, Chile ha experimentado una .bold[revitalización de la movilización social] .tiny[*(Donoso & Von Bülow, 2017; Somma et al., 2021)*]
 
 
 .center[
@@ -378,15 +378,15 @@ Creciente interés por el estudio del conflicto social
 
 .content-box-red.large[
 
-.red.bold[Individual]
+.red.bold.center[Individual]
 
 * Percepciones sobre la desigualdad .tiny[*(Hadler, 2017)*]
 
 
-* Estatus social subjetivo .tiny[*(Hertel and Schöneck, 2019)*]
+* Estatus social subjetivo .tiny[*(Hertel & Schöneck, 2019)*]
 
 
-* Creencias sobre la estratificación .tiny[*(Hertel and Schöneck, 2019; Kelley & Evans, 1995)*]
+* Creencias sobre la estratificación .tiny[*(Hertel & Schöneck, 2019; Kelley & Evans, 1995)*]
 
 
 * Organizaciones sociopolíticas .tiny[*(Kerrissey & Schofer, 2018; Ringqvist, 2020)*]
@@ -401,7 +401,7 @@ Creciente interés por el estudio del conflicto social
 
 .content-box-yellow.large[
 
-.red.bold[Contextual]
+.red.bold.center[Contextual]
 
 * Desigualdad y prosperidad económica .tiny[*(Hadler, 2017; Hertel & Schöneck, 2019)*]
 
@@ -780,12 +780,25 @@ background-position: 99% 1%
 ---
 ## Discusión
 
+--
+
 <div style="text-align: justify">
 </br>
+
 .left-column[
+
 ### Posición de clase
 ]
 .right-column[
+
+
+* Individuos ubicados en .bold[clases bajas/subordinadas] perciben *mayores* conflictos que quienes se ubican en .bold[clases altas/privilegiadas]
+
+
+* Posición en las relaciones de dominación y explotación → .bold[intereses materiales] disímiles 
+
+
+* Distinción entre clases .bold[propietarias y no propietarias]
 
 ]
 
@@ -798,8 +811,16 @@ background-position: 99% 1%
 </br>
 ### Membresía sindical
 ]
-</br>
+
 .right-column[
+
+* Sindicatos como .bold["escuelas de guerra"] 
+
+
+* Facilitar la polarización mediante .bold[diversos recursos] → *estructurales y cognitivos*
+
+
+* .bold[Revitalización sindical]
 
 ]
 ---
@@ -813,8 +834,15 @@ background-position: 99% 1%
 </br>
 ### Desigualdad económica
 ]
-</br></br>
+
 .right-column[
+
+* A .bold[mayor concentración del ingreso, mayor percepción de conflicto]
+
+* .bold[Variación] entre países
+
+* .bold[Teorías del conficto] → mayores visiones conflictivas sobre la distribución de recursos entre poseedores y desposeídos 
+
 
 
 ]
@@ -829,6 +857,13 @@ background-position: 99% 1%
 ]
 .right-column[
 
+* El efecto de la desigualdad .bold[no es parejo entre las clases sociales] 
+
+* .bold[Teorías del riesgo] → el efecto de cambios macroeconómicos depende de los grados de .bold[aversión al riesgo]
+
+* La .bold[desigualdad] *polariza* más en la .bold[cúspide] de la estructura social que en su parte más baja 
+
+
 ]
 
 ---
@@ -838,30 +873,43 @@ background-position: 99% 1%
 </br>
 .left-column[
 ### Clase y desigualdad
-</br>
+
 ### Corporativismo
 ]
 .right-column[
 
+* Institucionalización del conflicto → traslado de tensiones al .bold[plano político]
+
+* Institucionalización del conflicto → mayor .bold[balance entre los recursos de poder]
+
+* Países .bold[corporativistas] v/s países .bold[pluralistas]
+
+
 ]
+
 
 ---
 class: roja
- 
+
 ## Conclusiones
 
-<div style="text-align: justify">
-
---
-1. X
-
 --
 
-2. Y
+**<span style="color:yellow">1. Agenda de investigación:** dimensión subjetiva del conflicto como eje central de análisis </font>
+
 
 --
 
-3. K
+**<span style="color:yellow">2. Factores socioeconómicos:** la clase como vehículo relevante de polarización social  </font>
+
+--
+
+**<span style="color:yellow">3. Mayor contribución empírica:** evidencia de una nueva relación entre la clase y el conflicto percibido en contextos
+de alta desigualdad </font>
+
+--
+
+**<span style="color:yellow">4. Proyecciones:** medición, otros mecanismos de las desigualdades de clase y estudios de caso </font>
 
 
 ---

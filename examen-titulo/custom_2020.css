@@ -322,7 +322,7 @@ th, td { padding: 5px; }
 
 .MathJax_CHTML {
     font-size: 30px !important;
-    color: #225b7c;
+    color: black;
 }
 
 .bg-full {
@@ -444,6 +444,10 @@ a:active {
 
 .content-box-yellow {
 	background-color: #fef5c4;
+}
+
+.content-box-yay {
+  background-color: #fffcf0;
 }
 
 
