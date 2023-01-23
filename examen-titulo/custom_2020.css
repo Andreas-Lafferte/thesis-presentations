@@ -297,6 +297,7 @@ th, td { padding: 5px; }
 .small { font-size: 75%
 }
 
+
 .tiny { 
     font-size: 60%;
     line-height: 1.2em;
@@ -542,4 +543,21 @@ iframe {
 .title-inv-4 h1,
 .section-title-inv-4 h1 {
   color: #E0343E;
+}
+
+
+.left-column2 {
+  width: 25%;
+  height: 92%;
+  float: left;
+}
+.left-column2 h2, .left-column2 h3 {
+  color: #dc322f;
+}
+
+.right-column2 {
+  width: 75%;
+  float: right;
+  padding-top: 1em;
+  padding-right: 0em;
 }
