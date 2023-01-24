@@ -752,7 +752,7 @@ H4: ✓
 ## Modelos - Interacciones entre niveles
 
 .center[
-![:scale 80%](images/cross-level-interactions.png)
+![:scale 80%](images/interaction-h.png)
 
 ]
 
@@ -1113,6 +1113,13 @@ background-position: 99% 1%
 
 
 .footnote[∗∗∗ p < 0.01; ∗∗ p < 0.05; ∗ p < 0.1 ]
+---
+### Modelos
+
+
+.center[
+![:scale 80%](images/interaction-clasesmedias.png)
+]
 
 ---
 ### Ajuste modelos
