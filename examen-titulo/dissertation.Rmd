@@ -120,6 +120,32 @@ my_pretty_theme <- theme_minimal(base_family = "Roboto Condensed", base_size = 1
         # Add a thin grey border around all the plots to tie in the facet titles
         panel.border = element_rect(color = "grey90", fill = NA))
 
+my_pretty_theme2 <- theme_bw(base_family = "Roboto Condensed", base_size = 14) +
+  theme(panel.grid.minor = element_blank(),
+        # Bold, bigger title
+        plot.title = element_text(face = "bold", size = rel(1.7)),
+        # Plain, slightly bigger subtitle that is grey
+        plot.subtitle = element_text(face = "italic", size = rel(0.85), color = "grey30"),
+        # Italic, smaller, grey caption that is left-aligned
+        plot.caption = element_text(size = 12, 
+                                    hjust = 1),
+        # Bold legend titles
+        legend.title = element_text(face = "bold", size = rel(1.1)),
+        # Bold, slightly larger facet titles that are left-aligned for the sake of repetition
+        strip.text = element_text(face = "bold", size = rel(0.7), hjust = 0.5),
+        # Bold axis titles
+        axis.title = element_text(face = "bold", size = rel(1.2)),
+        # Add some space above the x-axis title and make it left-aligned
+        axis.title.x = element_text(margin = margin(t = 5)),
+        # Add some space to the right of the y-axis title and make it top-aligned
+        axis.title.y = element_text(margin = margin(r = 5)),
+        # Add a light grey background to the facet titles, with no borders
+        strip.background = element_rect(fill = "grey90", color = NA),
+        # Add a thin grey border around all the plots to tie in the facet titles
+        panel.border = element_rect(color = "grey20", fill = NA),
+        legend.text = element_text(size = 12),
+        axis.text.x = element_text(size = 13),
+        axis.text.y = element_text(size = 13))
 ```
 
 
@@ -906,6 +932,148 @@ background-position: 99% 1%
 ## 5. Respuesta a comentarios
 
 ---
+
+.coment[
+# Comentario
+]
+
+> "... se debería haber definido de modo más preciso qué se entiende por intereses materiales, así como en qué medida la variable dependiente utilizada en este estudio puede ser un indicador de ellos"
+
+
+
+.coment[
+# Respuesta
+]
+
+---
+.coment[
+# Comentario
+]
+
+> "... hay que ser más enfático al decir que las diferencias entre clases no son sustancialmente grandes... Más aún, sugiere la necesidad de explicar por qué esas diferencias no son tan grandes"
+
+
+.coment[
+# Respuesta
+]
+
+
+---
+.coment[
+# Comentario
+]
+
+Estimaciones con otras medidas de desigualdad económica
+
+
+.coment[
+# Respuesta
+]
+
+- **Justificación teórica** → enfoque en participación de los grupos ubicados en los extremos de la distribución del ingreso y estratifica mejor las ventajas y desventajas .tiny[*(Hertel & Shcöneck, 2019; Milanović, 2011)*]
+
+- **Resultados mejoran** → Replicación análisis con Top 10% de participación del ingreso (con Gini se mantienen). _¿Mientras más extrema la concentración del ingreso, mayor conflicto?_
+
+- **Resultados interacción mejoran** → Replicación análisis con Top 10% implica un coeficiente más grande
+
+
+---
+
+.pull-left[
+
+```{r echo=FALSE}
+
+mgini_1 <- readRDS("output/mgini_1.rds")
+plot_model(mgini_1,
+           colors = c("#e16462", "#084387"),
+           transform = NULL,
+           title = NULL, 
+           vline.color = "grey", 
+           show.values = TRUE, 
+           value.offset = .3,
+           p.threshold = c(0.1, 0.05,0.01),
+           rm.terms = c("(Intercept)", "C_AGE",
+                        "C_AGE", "SEXMujer", 
+                        "IDEOLOGYCentro", "IDEOLOGYIzquierda",
+                        "IDEOLOGYSin identificación", "C_SOCEXPEND"),
+           axis.labels = c("Ola 2019",
+                           "Ola 2009",
+                           "Indice Corporativismo",
+                           "Gini",
+                           "Miembro Sindicato",
+                           "9.Trabajadores no calificados",
+                           "8.Trabajadores calificados",
+                           "7.Supervisores no calificados",
+                           "6.Supervisores calificados",
+                           "5.Expertos sin autoridad",
+                           "4.Expertos directivos",
+                           "3.Pequeña burguesia",
+                           "2.Pequeños empleadores"))+
+  labs(x = "Estimación",
+       y = "Predictores",
+       caption = "Nota: Modelo incluye variables de control",
+       title = "MLM con Índice de Gini")+
+  my_pretty_theme2
+
+```
+
+]
+
+
+.pull-right[
+```{r echo=FALSE}
+
+mtop10_1 <- readRDS("output/mtop10_1.rds")
+plot_model(mtop10_1,
+           colors = c("#e16462", "#084387"),
+           transform = NULL,
+           title = NULL, 
+           vline.color = "grey", 
+           show.values = TRUE, 
+           value.offset = .3,
+           p.threshold = c(0.1, 0.05,0.01),
+           rm.terms = c("(Intercept)", "C_AGE",
+                        "C_AGE", "SEXMujer", 
+                        "IDEOLOGYCentro", "IDEOLOGYIzquierda",
+                        "IDEOLOGYSin identificación", "C_SOCEXPEND"),
+           axis.labels = c("Ola 2019",
+                           "Ola 2009",
+                           "Indice Corporativismo",
+                           "Top 10%",
+                           "Miembro Sindicato",
+                           "9.Trabajadores no calificados",
+                           "8.Trabajadores calificados",
+                           "7.Supervisores no calificados",
+                           "6.Supervisores calificados",
+                           "5.Expertos sin autoridad",
+                           "4.Expertos directivos",
+                           "3.Pequeña burguesia",
+                           "2.Pequeños empleadores"))+
+  labs(x = "Estimación",
+       y = "Predictores",
+       caption = "Nota: Modelo incluye variables de control",
+       title = "MLM con Top 10%")+
+  my_pretty_theme2
+
+
+
+```
+
+]
+
+
+.center.footnote[∗∗∗ p < 0.01; ∗∗ p < 0.05; ∗ p < 0.1 ]
+---
+
+.center[
+![:scale 80%](images/verdecross-top10.jpg)
+
+]
+
+
+.footnote[∗∗∗ p < 0.01; ∗∗ p < 0.05; ∗ p < 0.1 ]
+---
+
 class: roja
  
 ## Conclusiones post-comentarios
@@ -921,7 +1089,7 @@ class: roja
 
 --
 
-3. K
+3. Evidencia para sostener que los efectos de la concentración del ingreso se refuerzan al medir su repartición en pequeños grupos poblacionales
 
 
 ---

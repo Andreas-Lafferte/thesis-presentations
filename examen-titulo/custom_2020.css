@@ -561,3 +561,14 @@ iframe {
   padding-top: 1em;
   padding-right: 0em;
 }
+
+.coment h1{
+  color: #cb3365;
+}
+
+
+.right-column3 {
+  float: right;
+  width: 55%;
+}
+
