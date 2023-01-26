@@ -972,10 +972,15 @@ Estimaciones con otras medidas de desigualdad económica
 
 - **Justificación teórica** → enfoque en participación de los grupos ubicados en los extremos de la distribución del ingreso y estratifica mejor las ventajas y desventajas .tiny[*(Hertel & Shcöneck, 2019; Milanović, 2011)*]
 
-- **Resultados mejoran** → Replicación análisis con Top 10% de participación del ingreso (con Gini se mantienen). _¿Mientras más extrema la concentración del ingreso, mayor conflicto?_
+- **Resultados mejoran** → Replicación análisis con Top 10% de participación del ingreso (con Gini se mantienen)
 
 - **Resultados interacción mejoran** → Replicación análisis con Top 10% implica un coeficiente más grande
 
+
+.center[
+
+_¿Mirar a los grupos extremadamente ricos/privilegiados?_
+]
 
 ---
 
@@ -1009,8 +1014,8 @@ plot_model(mgini_1,
                            "4.Expertos directivos",
                            "3.Pequeña burguesia",
                            "2.Pequeños empleadores"))+
-  labs(x = "Estimación",
-       y = "Predictores",
+  labs(y = "Estimación",
+       x = NULL,
        caption = "Nota: Modelo incluye variables de control",
        title = "MLM con Índice de Gini")+
   my_pretty_theme2
@@ -1049,8 +1054,8 @@ plot_model(mtop10_1,
                            "4.Expertos directivos",
                            "3.Pequeña burguesia",
                            "2.Pequeños empleadores"))+
-  labs(x = "Estimación",
-       y = "Predictores",
+  labs(y = "Estimación",
+       x = NULL,
        caption = "Nota: Modelo incluye variables de control",
        title = "MLM con Top 10%")+
   my_pretty_theme2
@@ -1089,7 +1094,7 @@ class: roja
 
 --
 
-3. Evidencia para sostener que los efectos de la concentración del ingreso se refuerzan al medir su repartición en pequeños grupos poblacionales
+3. Evidencia para sostener que el efecto de la concentración del ingreso es más fuerte al enfocarse en pequeños segmentos de la distribución
 
 
 ---
