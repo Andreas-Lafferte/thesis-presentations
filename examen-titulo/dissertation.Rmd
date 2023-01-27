@@ -607,6 +607,8 @@ Módulo de Desigualdad Social de la [International Social Survey Programme (ISSP
 
 - .bold[Desigualdad económica]: ratio inter quintil S80/S20 sobre el ingreso familiar disponible post transferencias y post impuestos (concentración económica).
 
+</br>
+
 - .bold[Nivel de corporativismo]: índice desarrollado por Jahn (2016) a partir de Visser (2019) ICTWSS. 
 
 
@@ -947,7 +949,7 @@ Medición y discusión variable dependiente
 
 - **Supuestos** → asumir que los indicadores capturan intereses opuestos → explanandum/explanans
 
-- **Limitante** → asociada a los datos disponibles y ex-post ya que _sí_ implica percibir conflicto
+- **Limitante** → asociada a los datos disponibles y ex-post ya que _sí_ mide la percepción de conflicto (validez de constructo ≠ contenido)
 
 - **Avanzar en medición** → enfocarse en los _motivos_ de los conflictos antes que en los grupos
 
@@ -965,6 +967,13 @@ Diferencias de los β de la posición de clase no son sustancialmente grandes
 ]
 
 
+- **Mesurar conclusiones** → aunque hay apoyo a $H_1$ estas diferencias no son muy grandes
+
+- **Posibles sospechosos** → replicación con indicadores de $PSCi$ por separado (logit multinivel) _no arroja diferencias más grandes_ entre los β (ej. Modelo RP Trabajadores no calificados: $\beta$ = 0.63; p < .01)
+
+- **Implicancias** → _esta medida_ objetiva de clase no se asocia con grandes diferencias en cuanto a $PSCi$
+
+
 ---
 .coment[
 # Comentario
@@ -979,7 +988,7 @@ Estimaciones con otras medidas de desigualdad económica
 
 - **Justificación teórica** → enfoque en participación de los grupos ubicados en los extremos de la distribución del ingreso y estratifica mejor las ventajas y desventajas .tiny[*(Hertel & Shcöneck, 2019; Milanović, 2011)*]
 
-- **Resultados mejoran** → Replicación análisis con Top 10% de participación del ingreso (con Gini se mantienen)
+- **Resultados mejoran** → Replicación análisis con Top 10% de participación del ingreso
 
 - **Resultados interacción mejoran** → Replicación análisis con Top 10% implica un coeficiente más grande
 
@@ -1007,10 +1016,9 @@ plot_model(mgini_1,
            rm.terms = c("(Intercept)", "C_AGE",
                         "C_AGE", "SEXMujer", 
                         "IDEOLOGYCentro", "IDEOLOGYIzquierda",
-                        "IDEOLOGYSin identificación", "C_SOCEXPEND"),
-           axis.labels = c("Ola 2019",
-                           "Ola 2009",
-                           "Indice Corporativismo",
+                        "IDEOLOGYSin identificación", "C_SOCEXPEND",
+                        "WAVE2009", "WAVE2019"),
+           axis.labels = c("Indice Corporativismo",
                            "Gini",
                            "Miembro Sindicato",
                            "9.Trabajadores no calificados",
@@ -1047,10 +1055,9 @@ plot_model(mtop10_1,
            rm.terms = c("(Intercept)", "C_AGE",
                         "C_AGE", "SEXMujer", 
                         "IDEOLOGYCentro", "IDEOLOGYIzquierda",
-                        "IDEOLOGYSin identificación", "C_SOCEXPEND"),
-           axis.labels = c("Ola 2019",
-                           "Ola 2009",
-                           "Indice Corporativismo",
+                        "IDEOLOGYSin identificación", "C_SOCEXPEND",
+                        "WAVE2009", "WAVE2019"),
+           axis.labels = c("Indice Corporativismo",
                            "Top 10%",
                            "Miembro Sindicato",
                            "9.Trabajadores no calificados",
@@ -1093,11 +1100,11 @@ class: roja
 <div style="text-align: justify">
 
 --
-1. X
+1. Datos disponibles, avanzar en mejores formas de medición de las percepciones de conflicto
 
 --
 
-2. Y
+2. Matizar diferencias entre clases 
 
 --
 
@@ -1330,6 +1337,23 @@ fit_tab
 
 ```
 
+
+---
+### Comentarios
+
+.center[
+![:scale 52%](images/logit.JPG)
+]
+
+
+---
+### Comentarios
+
+.center[
+![:scale 80%](images/EGP.png)
+
+]
+
 ---
 ### Matriz correlaciones
 
@@ -1345,6 +1369,7 @@ fit_tab
 ![:scale 80%](images/multico.png)
 
 ]
+
 
 ---
 ### Planteamiento
@@ -1373,5 +1398,4 @@ La evidencia no permite sostener $H_{5}$ ya que, al contrario, el conflicto perc
 
 
 Limitaciones y proyecciones: formas más sofisticadas de estimar el tiempo → .bold[Modelos multinivel híbridos] .tiny[*(Schmidt-Catran & Fairbrother, 2016)*]
-
 
