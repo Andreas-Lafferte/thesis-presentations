@@ -947,11 +947,11 @@ Medición y discusión variable dependiente
 # Respuesta
 ]
 
-- **Supuestos** → asumir que los indicadores capturan intereses opuestos → explanandum/explanans
+- **Supuestos** → asumir que los indicadores capturan intereses opuestos
 
-- **Limitante** → asociada a los datos disponibles y ex-post ya que _sí_ mide la percepción de conflicto (validez de constructo ≠ contenido)
+- **Limitante** → asociada a los datos secundarios disponibles y ex-post (validez de constructo ≠ contenido)
 
-- **Avanzar en medición** → enfocarse en los _motivos_ de los conflictos antes que en los grupos
+- **Avanzar agenda de medición** → enfocarse en los _motivos_ de los conflictos antes que en los grupos
 
 
 
@@ -966,12 +966,11 @@ Diferencias de los β de la posición de clase no son sustancialmente grandes
 # Respuesta
 ]
 
+- **Mesurar conclusiones** → aunque hay apoyo a $H_1$ estas diferencias no son muy grandes, _¿posibles explicaciones?_
 
-- **Mesurar conclusiones** → aunque hay apoyo a $H_1$ estas diferencias no son muy grandes
+- **Dificultades** asociadas a variables dependientes subjetivas e independientes objetivas
 
-- **Posibles sospechosos** → replicación con indicadores de $PSCi$ por separado (logit multinivel) _no arroja diferencias más grandes_ entre los β (ej. Modelo RP Trabajadores no calificados: $\beta$ = 0.63; p < .01)
-
-- **Implicancias** → _esta medida_ objetiva de clase no se asocia con grandes diferencias en cuanto a $PSCi$
+- **Limitado** a los datos disponibles → avanzar en un _estándar_ en sociología 
 
 
 ---
@@ -988,9 +987,8 @@ Estimaciones con otras medidas de desigualdad económica
 
 - **Justificación teórica** → enfoque en participación de los grupos ubicados en los extremos de la distribución del ingreso y estratifica mejor las ventajas y desventajas .tiny[*(Hertel & Shcöneck, 2019; Milanović, 2011)*]
 
-- **Resultados mejoran** → Replicación análisis con Top 10% de participación del ingreso
+- **Resultados mejoran** → replicación análisis con Top 10% de participación del ingreso implica coeficientes más grandes
 
-- **Resultados interacción mejoran** → Replicación análisis con Top 10% implica un coeficiente más grande
 
 
 .center[
@@ -1100,11 +1098,11 @@ class: roja
 <div style="text-align: justify">
 
 --
-1. Datos disponibles, avanzar en mejores formas de medición de las percepciones de conflicto
+1. Avanzar en agenda de medición de las percepciones de conflicto
 
 --
 
-2. Matizar diferencias entre clases 
+2. Reconocer dificultades de predecir una percepción subjetiva a partir de factores objetivos
 
 --
 
@@ -1336,23 +1334,6 @@ fit_tab <- kableExtra::kable(fit_tab, format = "html", col.names = colnames, row
 fit_tab
 
 ```
-
-
----
-### Comentarios
-
-.center[
-![:scale 52%](images/logit.JPG)
-]
-
-
----
-### Comentarios
-
-.center[
-![:scale 80%](images/EGP.png)
-
-]
 
 ---
 ### Matriz correlaciones
